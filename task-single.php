@@ -17,10 +17,7 @@ if(isset($_POST['id'])) {
     $json[] = array(
       'fuec' => $row['fuec'],
       'name' => $row['name'],
-      'apellido' => $row['apellido'],
-      'description' => $row['description'],
-      'contratante' => $row['contratante'],
-      'objetocontrato' => $row['objetocontrato'],
+    
       'cc' => $row['cc'],
       'origen' => $row['origen'],
       'recorrido' => $row['recorrido'],

@@ -1,4 +1,4 @@
-// 
+// Validaciones function Required
 (function() {
   'use strict';
   window.addEventListener('load', function() {
@@ -44,7 +44,8 @@ $(document).ready(function() {
             let template = '';
             tasks.forEach(task => {
               template += `
-                     <li><a href="#" class="task-item">${task.name}</a></li>
+                     <li><a  class="task-item">${task.fuec} ${task.name} ${task.apellido} ${task.description}</a></li>
+                     
                     ` 
             });
             $('#task-result').show();
@@ -143,6 +144,7 @@ $(document).ready(function() {
     const id = $(element).attr('taskId');
     $.post('task-single.php', {id}, (response) => {
       const task = JSON.parse(response);
+      $('#fuec').val(task.fuec);
       $('#name').val(task.name);
       $('#apellido').val(task.apellido);
       $('#description').val(task.description);
@@ -167,4 +169,16 @@ $(document).ready(function() {
       });
     }
   });
+
+    // Delete a Single Task
+    $(document).on('click', '.task-add', (e) => {
+      if(confirm('¿Estás seguro de Enviar los Datos?')) {
+        const element = $(this)[0].activeElement.parentElement.parentElement;
+        const id = $(element).attr('taskId');
+        $.post('task-add.php', {id}, (response) => {
+          fetchTasks();
+        });
+      }
+    });
+
 });
