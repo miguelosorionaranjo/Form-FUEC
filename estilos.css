@@ -57,3 +57,32 @@ left: 150px;
     font-size: 3.5rem;
   }
 }
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+  font-family: Lato, sans-serif;
+}
+
+h1{
+  background: #14cc70;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0feeab, #13e985);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #69e9c3, #05643c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  color:white;
+  height: 50%;
+  }
+
+ .tabla {
+    width: 100%;
+  
+  }
+
+  .botón {
+    width: 50%;
+  
+  }

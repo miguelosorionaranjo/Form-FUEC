@@ -18,7 +18,7 @@
 })(); //
 
 
-
+// Funciones
 
 $(document).ready(function() {
   // Global Settings
@@ -29,8 +29,7 @@ $(document).ready(function() {
   fetchTasks();
   $('#task-result').hide();
 
-
-  // search key type event
+  // Buscador
   $('#search').keyup(function() {
     if($('#search').val()) {
       let search = $('#search').val();
@@ -44,7 +43,26 @@ $(document).ready(function() {
             let template = '';
             tasks.forEach(task => {
               template += `
-                     <li><a  class="task-item">${task.fuec} ${task.name} ${task.apellido} ${task.description}</a></li>
+
+              <tr  >
+              
+              <td  >
+              ${task.fuec}
+              </td>
+              <td>
+             
+                ${task.name} 
+              
+              </td>
+              <td>
+             
+                ${task.apellido} 
+             
+              </td>
+              <td>${task.description}</td>
+
+              </tr>
+              
                      
                     ` 
             });
