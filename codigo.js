@@ -155,7 +155,6 @@ $(document).ready(function() {
       }
     });
   }
-
   // Get a Single Task by Id 
   $(document).on('click', '.task-item', (e) => {
     const element = $(this)[0].activeElement.parentElement.parentElement;
@@ -188,15 +187,5 @@ $(document).ready(function() {
     }
   });
 
-    // Falta
-    $(document).on('click', '.task-add', (e) => {
-      if(confirm('¿Estás seguro de Enviar los Datos?')) {
-        const element = $(this)[0].activeElement.parentElement.parentElement;
-        const id = $(element).attr('taskId');
-        $.post('task-add.php', {id}, (response) => {
-          fetchTasks();
-        });
-      }
-    });
 
 });

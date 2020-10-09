@@ -19,13 +19,15 @@ if(isset($_POST['name'])) {
   if (!$result) {
     die('Query Failed.');
   }
-if (fuec: $('#fuec').length==0){
-  alert("Ingrese Número de FUEC");
-}
 
-else (fuec: $('#fuec').length==0){
-  alert("Ingrese Número de FUEC");
-}
+  echo "Registrado con Éxito";  
+#if (fuec: $('#fuec').length==0){
+#  alert("Ingrese Número de FUEC");
+#}
+
+#else (fuec: $('#fuec').length==0){
+ # alert("Ingrese Número de FUEC");
+#}
 
 }
 

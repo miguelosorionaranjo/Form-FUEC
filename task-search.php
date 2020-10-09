@@ -9,7 +9,6 @@ if(!empty($search)) {
   $result = mysqli_query($connection, $query);
   
   if(!$result) {
-    echo "No se encontraron Resultados";
     die('Query Error' . mysqli_error($connection));
    
   }

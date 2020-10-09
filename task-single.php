@@ -8,7 +8,7 @@ if(isset($_POST['id'])) {
   $query = "SELECT * from task WHERE id = {$id}";
 
   $result = mysqli_query($connection, $query);
-  if(!result) {
+  if(!$result) {
     die('Query Failed'. mysqli_error($connection));
   }
 
@@ -19,6 +19,8 @@ if(isset($_POST['id'])) {
       'name' => $row['name'],
       'apellido' => $row['apellido'],
       'description' => $row['description'],
+      'contratante' => $row['contratante'],
+      'objetocontrato' => $row['objetocontrato'],
       'cc' => $row['cc'],
       'origen' => $row['origen'],
       'recorrido' => $row['recorrido'],
