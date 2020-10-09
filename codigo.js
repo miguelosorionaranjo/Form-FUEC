@@ -188,7 +188,7 @@ $(document).ready(function() {
     }
   });
 
-    // Delete a Single Task
+    // Falta
     $(document).on('click', '.task-add', (e) => {
       if(confirm('¿Estás seguro de Enviar los Datos?')) {
         const element = $(this)[0].activeElement.parentElement.parentElement;
