@@ -11,14 +11,12 @@ background: #1488CC;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
 }
-
 .card-header{
 background: #1488CC;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
 color:white;
 }
-
 .derecha
 {
 position:relative;
@@ -27,22 +25,18 @@ bottom: 100px ;
 right: 0px;
 left: 150px;
 }
-
 .themed-grid-col {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: rgba(86, 61, 124, .15);
   border: 1px solid rgba(86, 61, 124, .2);
 }
-
 .themed-container {
   padding: 15px;
   margin-bottom: 30px;
   background-color: rgba(0, 123, 255, .15);
   border: 1px solid rgba(0, 123, 255, .2);
 }
-
-
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -51,13 +45,11 @@ left: 150px;
   -ms-user-select: none;
   user-select: none;
 }
-
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
 }
-
 ul {
   display: block;
   list-style-type: disc;
@@ -68,7 +60,6 @@ ul {
   padding-left: 40px;
   font-family: Lato, sans-serif;
 }
-
 h1{
   background: #14cc70;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0feeab, #13e985);  /* Chrome 10-25, Safari 5.1-6 */
@@ -76,12 +67,9 @@ h1{
   color:white;
   height: 50%;
   }
-
  .tabla {
     width: 100%;
-  
   }
-
   .ventanas {
     width: 100%;
   }

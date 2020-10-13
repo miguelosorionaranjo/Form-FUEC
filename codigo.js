@@ -16,19 +16,14 @@
     });
   }, false);
 })(); //
-
-
 // Funciones
-
 $(document).ready(function() {
   // Global Settings
   let edit = false;
-
   // Testing Jquery
   console.log('jquery is working!');
   fetchTasks();
   $('#task-result').hide();
-
   // Buscador
   $('#search').keyup(function() {
     if($('#search').val()) {
@@ -43,27 +38,18 @@ $(document).ready(function() {
             let template = '';
             tasks.forEach(task => {
               template += `
-
               <tr  >
-              
               <td  >
               ${task.fuec}
               </td>
               <td>
-             
                 ${task.name} 
-              
               </td>
               <td>
-             
                 ${task.apellido} 
-             
               </td>
               <td>${task.description}</td>
-
               </tr>
-              
-                     
                     ` 
             });
             $('#task-result').show();
@@ -73,7 +59,6 @@ $(document).ready(function() {
       })
     }
   });
-
   $('#task-form').submit(e => {
     e.preventDefault();
     const postData = {
@@ -96,7 +81,6 @@ $(document).ready(function() {
       fetchTasks();
     });
   });
-
   // Fetching Tasks
   function fetchTasks() {
     $.ajax({
@@ -123,23 +107,18 @@ $(document).ready(function() {
                   </a>
                   </td>
                   <td>${task.description}</td>
-
                   <td  >
                   ${task.contratante}
                   </td>
-
                   <td  >
                   ${task.objetocontrato}
                   </td>
-
                   <td  >
                   ${task.cc}
                   </td>
-
                   <td   >
                   ${task.origen}
                   </td>
-
                   <td >
                   ${task.recorrido}
                   </td>
@@ -175,7 +154,6 @@ $(document).ready(function() {
     });
     e.preventDefault();
   });
-
   // Delete a Single Task
   $(document).on('click', '.task-delete', (e) => {
     if(confirm('¿Estás seguro de que quieres eliminarlo?')) {
@@ -186,6 +164,4 @@ $(document).ready(function() {
       });
     }
   });
-
-
 });
